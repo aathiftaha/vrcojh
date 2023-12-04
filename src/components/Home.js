@@ -30,19 +30,18 @@ export default function Home() {
     return (
         <div>
             <TextField
-          error
-          id="standard-error"
-          label="Firstname"
-          defaultValue="Hello World"
-          variant="standard"
-          value={name}
-          onChange={onNameChange}
-        />
-        <div id="date-picker" style={{width:'200px'}}>
-        <DatePickerViews />
-        
-        </div>
-        <MultiSelect />
+                error
+                id="standard-error"
+                label="Firstname"
+                defaultValue="Hello World"
+                variant="standard"
+                value={name}
+                onChange={onNameChange}
+            />
+            <div id="date-picker" style={{width:'200px'}}>
+                <DatePickerViews />
+            </div>
+            <MultiSelect />
         </div>
     )
 }

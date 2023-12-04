@@ -30,13 +30,13 @@ const technologies = [
 ];
 
 export default function MultiSelect() {
-  const [personName, setPersonName] = React.useState([]);
+  const [techName, setTechName] = React.useState([]);
 
   const handleChange = (event) => {
     const {
       target: { value },
     } = event;
-    setPersonName(
+    setTechName(
       // On autofill we get a stringified value.
       typeof value === 'string' ? value.split(',') : value,
     );
@@ -50,7 +50,7 @@ export default function MultiSelect() {
           labelId="demo-multiple-checkbox-label"
           id="demo-multiple-checkbox"
           multiple
-          value={personName}
+          value={techName}
           onChange={handleChange}
           input={<OutlinedInput label="Tag" />}
           renderValue={(selected) => selected.join(', ')}
@@ -58,7 +58,7 @@ export default function MultiSelect() {
         >
           {technologies.map((name) => (
             <MenuItem key={name} value={name}>
-              <Checkbox checked={personName.indexOf(name) > -1} />
+              <Checkbox checked={techName.indexOf(name) > -1} />
               <ListItemText primary={name} />
             </MenuItem>
           ))}
