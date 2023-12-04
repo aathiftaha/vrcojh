@@ -5,6 +5,7 @@ import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import MultiSelect from './MultiSelect';
 
  function DatePickerViews() {
   return (
@@ -29,17 +30,18 @@ export default function Home() {
     return (
         <div>
             <TextField
-          error
-          id="standard-error"
-          label="Firstname"
-          defaultValue="Hello World"
-          variant="standard"
-          value={name}
-          onChange={onNameChange}
-        />
-        <div id="date-picker" style={{width:'200px'}}>
-        <DatePickerViews />
-        </div>
+                error
+                id="standard-error"
+                label="Firstname"
+                defaultValue="Hello World"
+                variant="standard"
+                value={name}
+                onChange={onNameChange}
+            />
+            <div id="date-picker" style={{width:'200px'}}>
+                <DatePickerViews />
+            </div>
+            <MultiSelect />
         </div>
     )
 }
