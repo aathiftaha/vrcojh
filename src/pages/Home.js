@@ -5,7 +5,7 @@ import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import MultiSelect from './MultiSelect';
+import MultiSelect from '../components/MultiSelect';
 
  function DatePickerViews() {
   return (
@@ -28,6 +28,7 @@ export default function Home() {
         }
 
     return (
+
         <div>
             <TextField
                 error
@@ -42,6 +43,7 @@ export default function Home() {
                 <DatePickerViews />
             </div>
             <MultiSelect />
+            
         </div>
     )
 }
