@@ -29,14 +29,13 @@ const technologies = [
   'SQL',
 ];
 
-export default function MultiSelect() {
-  const [techName, setTechName] = React.useState([]);
+export default function MultiSelect({onChange, techName}) {
 
   const handleChange = (event) => {
     const {
       target: { value },
     } = event;
-    setTechName(
+    onChange(
       // On autofill we get a stringified value.
       typeof value === 'string' ? value.split(',') : value,
     );
