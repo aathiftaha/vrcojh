@@ -18,9 +18,6 @@ export default function Navbar() {
         <Typography sx={{ minWidth: 100 }}>
             <NavLink to="/bmi">BMI</NavLink>
         </Typography>
-        <Typography sx={{ minWidth: 100 }}>
-            <NavLink to="/resume">RESUME</NavLink>
-        </Typography>
       </Box>
       
     </React.Fragment>
