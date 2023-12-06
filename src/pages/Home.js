@@ -1,32 +1,24 @@
 import {useState} from 'react';
 import TextField from "@mui/material/TextField"
 import * as React from 'react';
-import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import MultiSelect from '../components/MultiSelect';
 
- function DatePickerViews() {
-  return (
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <DemoContainer components={['DatePicker', 'DatePicker', 'DatePicker']}>
-      
-        <DatePicker label={'"month" and "year"'} views={['month', 'year']} />
-      </DemoContainer>
-    </LocalizationProvider>
-  );
-}
+import MultiSelect from '../components/MultiSelect';
+import Resume from '../components/Resume';
+import CustomDatePicker from '../components/CustomDatePicker';
+
+ 
 
 
 export default function Home() {
     const [name, setName] = useState('');
-
+    const [techName, setTechName] = React.useState([]);
+    const [date, setDate] = useState(null)
+    
     const onNameChange = (evt) => {
         console.log(evt.target)
         setName(evt.target.value)
         }
-
+        console.log(new Date(date))
     return (
 
         <div>
@@ -40,10 +32,10 @@ export default function Home() {
                 onChange={onNameChange}
             />
             <div id="date-picker" style={{width:'200px'}}>
-                <DatePickerViews />
+                <CustomDatePicker date={date} onDateChange={setDate} />
             </div>
-            <MultiSelect />
-            
+            <MultiSelect onChange={setTechName} techName={techName}/>
+            <Resume name={name} tech={techName} graduationYear={date} />
         </div>
     )
 }
