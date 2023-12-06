@@ -4,10 +4,6 @@ import Typography from '@mui/material/Typography';
 import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
   
   return (
     <React.Fragment>
