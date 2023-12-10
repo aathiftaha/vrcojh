@@ -15,7 +15,7 @@ export default function Home() {
         <span>Python, SQL, Javascript, React, HTML, CSS, Tableau</span>
       </p>
       <p>
-        <a href="https://drive.google.com/file/d/1Rz_KByoYKI4FlAC-64EIU8FuGJOM2DFo/view?usp=sharing" target='_blank' style={{ margin: '30px 0' }}>
+        <a href="https://drive.google.com/file/d/1Rz_KByoYKI4FlAC-64EIU8FuGJOM2DFo/view?usp=sharing" target='_blank' rel="noreferrer" style={{ margin: '30px 0' }}>
           Download Resume
         </a>
       </p>
