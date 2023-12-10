@@ -6,7 +6,18 @@ function BmiPage() {
   const [height, setHeight] = useState('');
   const [bmi, setBmi] = useState(null);
 
+  const onWeightChange = evt => {
+    setBmi(null)
+    setWeight(evt.target.value)
+  }
+
+  const onHeightChange = evt => {
+    setBmi(null)
+    setHeight(evt.target.value)
+  }
+
   const onSubmit = (evt) => {
+    setBmi(null)
     evt.preventDefault();
     const calculatedBMI = calculateBMI(weight, height);
     setBmi(calculatedBMI);
@@ -19,7 +30,7 @@ function BmiPage() {
         <input
           type="number"
           value={weight}
-          onChange={(e) => setWeight(e.target.value)}
+          onChange={onWeightChange}
           placeholder="Weight in kilograms"
           min="1"
           max="300"
@@ -27,7 +38,7 @@ function BmiPage() {
         <input
           type="number"
           value={height}
-          onChange={(e) => setHeight(e.target.value)}
+          onChange={onHeightChange}
           placeholder="Height in meters"
           step="0.01"
           min="0.1"
