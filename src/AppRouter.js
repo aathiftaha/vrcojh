@@ -9,7 +9,7 @@ export default function AppRouter() {
     <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/bmi" element={<BmiPage />} />
+        <Route path="/bmi-calculator" element={<BmiPage />} />
       </Routes>
     </BrowserRouter>
   )

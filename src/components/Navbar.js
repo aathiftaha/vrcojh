@@ -8,7 +8,7 @@ export default function Navbar() {
             <NavLink to="/">HOME</NavLink>
         </p>
         <p style={{ minWidth: 100 }}>
-            <NavLink to="/bmi">BMI</NavLink>
+            <NavLink to="/bmi-calculator">BMI Calculator</NavLink>
         </p>
       </div>
       
