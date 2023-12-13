@@ -1,17 +1,13 @@
 {
   "files": {
-    "main.css": "/vrcojh/static/css/main.e6c13ad2.css",
-    "main.js": "/vrcojh/static/js/main.a36cf1ba.js",
-    "static/js/703.8299b84c.chunk.js": "/vrcojh/static/js/703.8299b84c.chunk.js",
-    "static/js/379.9d79cedc.chunk.js": "/vrcojh/static/js/379.9d79cedc.chunk.js",
+    "main.css": "/vrcojh/static/css/main.cfc209cb.css",
+    "main.js": "/vrcojh/static/js/main.6d0628c9.js",
     "index.html": "/vrcojh/index.html",
-    "main.e6c13ad2.css.map": "/vrcojh/static/css/main.e6c13ad2.css.map",
-    "main.a36cf1ba.js.map": "/vrcojh/static/js/main.a36cf1ba.js.map",
-    "703.8299b84c.chunk.js.map": "/vrcojh/static/js/703.8299b84c.chunk.js.map",
-    "379.9d79cedc.chunk.js.map": "/vrcojh/static/js/379.9d79cedc.chunk.js.map"
+    "main.cfc209cb.css.map": "/vrcojh/static/css/main.cfc209cb.css.map",
+    "main.6d0628c9.js.map": "/vrcojh/static/js/main.6d0628c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.a36cf1ba.js"
+    "static/css/main.cfc209cb.css",
+    "static/js/main.6d0628c9.js"
   ]
 }
